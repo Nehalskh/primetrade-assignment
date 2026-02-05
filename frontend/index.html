@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PrimeTrade Assignment UI</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PrimeTrade Assignment UI</h1>
+
+    <div class="row">
+      <div class="card">
+        <h2>Register</h2>
+        <input id="regEmail" placeholder="email" />
+        <input id="regPass" placeholder="password" type="password" />
+        <button id="btnRegister">Register</button>
+      </div>
+
+      <div class="card">
+        <h2>Login</h2>
+        <input id="logEmail" placeholder="email" />
+        <input id="logPass" placeholder="password" type="password" />
+        <button id="btnLogin">Login</button>
+        <button id="btnLogout" class="secondary">Logout</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Protected Dashboard</h2>
+      <div id="authState">Not logged in</div>
+      <button id="btnMe" class="secondary">GET /auth/me</button>
+      <pre id="meBox"></pre>
+    </div>
+
+    <div class="card">
+      <h2>Tasks</h2>
+      <div class="row">
+        <input id="taskTitle" placeholder="Task title" />
+        <input id="taskDesc" placeholder="Description (optional)" />
+        <button id="btnCreateTask">Create</button>
+      </div>
+
+      <button id="btnRefresh" class="secondary">Refresh List</button>
+      <div id="tasks"></div>
+    </div>
+
+    <div id="msg"></div>
+    <p class="hint">
+      Backend URL is configured in <code>app.js</code>. Start backend on <code>http://localhost:8000</code>.
+    </p>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

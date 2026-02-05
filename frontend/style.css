@@ -1,0 +1,14 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #0b0f17; color: #e6e6e6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.card { background: #121a2a; border: 1px solid #22304d; border-radius: 12px; padding: 16px; margin: 16px 0; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+input { padding: 10px; border-radius: 10px; border: 1px solid #22304d; background: #0b1220; color: #e6e6e6; flex: 1; }
+button { padding: 10px 14px; border: 0; border-radius: 10px; background: #3b82f6; color: white; cursor: pointer; }
+button.secondary { background: #334155; }
+#msg { margin-top: 12px; white-space: pre-wrap; }
+.task { display: flex; gap: 10px; align-items: center; border-top: 1px solid #22304d; padding: 10px 0; }
+.task input[type="checkbox"] { flex: 0; }
+.task .title { font-weight: 700; }
+.task .meta { opacity: 0.8; font-size: 12px; }
+.hint { opacity: 0.75; }
+pre { background: #0b1220; border: 1px solid #22304d; padding: 12px; border-radius: 12px; overflow: auto; }
